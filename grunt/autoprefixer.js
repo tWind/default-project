@@ -5,7 +5,7 @@ module.exports = {
     },
     main: {
         files: {
-            src: ''
+            src: '<%= project.dist %>/css/<%= project.name %>.css'
         }
     }
 };

@@ -3,7 +3,7 @@ module.exports = {
         files: [
             '<%= project.app %>/blocks/**/{,*/}*.{scss,sass}'
         ],
-        tasks: ['sass'],
+        tasks: ['sass', 'autoprefixer'],
         options: {
             spawn: false
         }
