@@ -1,8 +1,9 @@
 default:
   description: 'Default (production) build'
   tasks:
-      - sass
-      - autoprefixer
-      - concat
-      - watch
+    - copy
+    - sass
+    - autoprefixer
+    - concat
+    - watch
 

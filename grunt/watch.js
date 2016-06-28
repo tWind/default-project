@@ -17,5 +17,12 @@ module.exports = {
         options: {
             spawn: false
         }
+    },
+    other: {
+        files: ['<%= project.images %>/*.{png,jpg,gif,svg}'],
+        tasks: ['copy'],
+        options: {
+            spawn: true
+        }
     }
 };

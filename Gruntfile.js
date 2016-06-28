@@ -10,7 +10,9 @@ module.exports = function (grunt) {
 				js: '<%=project.dist %>/js',
 				blocks: '<%project.app %>/blocks',
 				libs: '<%=project.app %>/libs',
-				modules: '<%=project.app %>/modules'
+				modules: '<%=project.app %>/modules',
+				images: '<%=project.app %>/img',
+				fonts: '<%=project.app %>/fonts'
 			}
 		}
 	});
