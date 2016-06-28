@@ -2,5 +2,5 @@ default:
   description: 'Default (production) build'
   tasks:
       - sass
-
+      - watch
 

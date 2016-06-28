@@ -6,7 +6,10 @@ module.exports = function (grunt) {
 				name: 'default-project',
 				app: 'public',
 				dist: '<%=project.app %>/dist',
-				scss: '<%=project.app %>/<%=project.name%>.scss'
+				scss: '<%=project.app %>/<%=project.name%>.scss',
+				blocks: '<%project.app %>/blocks',
+				libs: '<%=project.app %>/libs',
+				modules: '<%=project.app %>/modules'
 			}
 		}
 	});
