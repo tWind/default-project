@@ -1,6 +1,7 @@
 default:
   description: 'Default (production) build'
   tasks:
+    - sprite
     - copy
     - sass
     - autoprefixer

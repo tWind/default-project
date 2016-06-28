@@ -1,4 +1,7 @@
 module.exports = function (grunt) {
+	require('jit-grunt')(grunt, {
+		sprite: 'grunt-spritesmith'
+	});
 	require('load-grunt-config')(grunt, {
 		jitGrunt: true,
 		data: {
@@ -8,7 +11,7 @@ module.exports = function (grunt) {
 				dist: '<%=project.app %>/dist',
 				scss: '<%=project.app %>/<%=project.name%>.scss',
 				js: '<%=project.dist %>/js',
-				blocks: '<%project.app %>/blocks',
+				blocks: '<%=project.app %>/blocks',
 				libs: '<%=project.app %>/libs',
 				modules: '<%=project.app %>/modules',
 				images: '<%=project.app %>/img',
