@@ -9,3 +9,7 @@ default:
     - connect
     - watch
 
+dev:
+  description: 'dev'
+  tasks:
+    - watch

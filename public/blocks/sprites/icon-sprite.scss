@@ -11,22 +11,33 @@ $icon-home: x y offset_x offset_y width height total_width total_height image_pa
 At the bottom of this section, we provide information about the spritesheet itself
 $spritesheet: width height image $spritesheet-sprites;
 */
+$-i-m-g-28062016-191539-name: 'IMG_28062016_191539';
+$-i-m-g-28062016-191539-x: 0px;
+$-i-m-g-28062016-191539-y: 0px;
+$-i-m-g-28062016-191539-offset-x: 0px;
+$-i-m-g-28062016-191539-offset-y: 0px;
+$-i-m-g-28062016-191539-width: 1366px;
+$-i-m-g-28062016-191539-height: 768px;
+$-i-m-g-28062016-191539-total-width: 1366px;
+$-i-m-g-28062016-191539-total-height: 824px;
+$-i-m-g-28062016-191539-image: '../img/icon-sprite.png';
+$-i-m-g-28062016-191539: (0px, 0px, 0px, 0px, 1366px, 768px, 1366px, 824px, '../img/icon-sprite.png', 'IMG_28062016_191539', );
 $icon-list-calendar-b-name: 'icon-list-calendar-b';
 $icon-list-calendar-b-x: 0px;
-$icon-list-calendar-b-y: 0px;
+$icon-list-calendar-b-y: 776px;
 $icon-list-calendar-b-offset-x: 0px;
-$icon-list-calendar-b-offset-y: 0px;
+$icon-list-calendar-b-offset-y: -776px;
 $icon-list-calendar-b-width: 48px;
 $icon-list-calendar-b-height: 48px;
-$icon-list-calendar-b-total-width: 48px;
-$icon-list-calendar-b-total-height: 48px;
+$icon-list-calendar-b-total-width: 1366px;
+$icon-list-calendar-b-total-height: 824px;
 $icon-list-calendar-b-image: '../img/icon-sprite.png';
-$icon-list-calendar-b: (0px, 0px, 0px, 0px, 48px, 48px, 48px, 48px, '../img/icon-sprite.png', 'icon-list-calendar-b', );
-$spritesheet-width: 48px;
-$spritesheet-height: 48px;
+$icon-list-calendar-b: (0px, 776px, 0px, -776px, 48px, 48px, 1366px, 824px, '../img/icon-sprite.png', 'icon-list-calendar-b', );
+$spritesheet-width: 1366px;
+$spritesheet-height: 824px;
 $spritesheet-image: '../img/icon-sprite.png';
-$spritesheet-sprites: ($icon-list-calendar-b, );
-$spritesheet: (48px, 48px, '../img/icon-sprite.png', $spritesheet-sprites, );
+$spritesheet-sprites: ($-i-m-g-28062016-191539, $icon-list-calendar-b, );
+$spritesheet: (1366px, 824px, '../img/icon-sprite.png', $spritesheet-sprites, );
 
 /*
 The provided mixins are intended to be used with the array-like variables
