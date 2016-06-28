@@ -1,16 +1,16 @@
 # Starting a new project ver 3.0
 
-** Начало работы
+*** Начало работы ***
 ```
 cd <корень проекта>
 npm install
 ```
 
-** Windows
+** Windows **
 ```
 mklink /d dist public\dist
 ```
-** Unix
+** Unix **
 ```
 ln -s staticfiles/build static
 ```
