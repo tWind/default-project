@@ -7,6 +7,7 @@ module.exports = function (grunt) {
 				app: 'public',
 				dist: '<%=project.app %>/dist',
 				scss: '<%=project.app %>/<%=project.name%>.scss',
+				js: '<%=project.dist %>/js',
 				blocks: '<%project.app %>/blocks',
 				libs: '<%=project.app %>/libs',
 				modules: '<%=project.app %>/modules'

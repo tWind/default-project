@@ -8,14 +8,14 @@ module.exports = {
             spawn: false
         }
     },
-    // scripts: {
-    //     files: [
-    //         '<%= project.libs %>/js/*.js',
-    //         '<%= project.blocks %>/**/js/*.js'
-    //     ],
-    //     tasks: ['concat'],
-    //     options: {
-    //         spawn: false
-    //     }
-    // }
+    scripts: {
+        files: [
+            '<%= project.libs %>/js/*.js',
+            '<%= project.blocks %>/**/js/*.js'       
+        ],
+        tasks: ['concat'],
+        options: {
+            spawn: false
+        }
+    }
 };

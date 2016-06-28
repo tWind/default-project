@@ -3,5 +3,6 @@ default:
   tasks:
       - sass
       - autoprefixer
+      - concat
       - watch
 
