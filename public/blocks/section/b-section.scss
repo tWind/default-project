@@ -1,0 +1,5 @@
+.b-section {
+  &__row {
+    @include container();
+  }
+}

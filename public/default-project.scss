@@ -1,4 +1,9 @@
 /*
+**  SUSY
+*/
+@import "../node_modules/susy/sass/susy";
+
+/*
 **  GLOBAL
 */
 
@@ -9,3 +14,15 @@
 @import "blocks/global/fonts";
 @import 'blocks/global/typo';
 @import 'blocks/global/global';
+
+/*
+** MIXINS
+*/
+
+@import "blocks/mixins/mixins";
+
+/*
+** BLOCKS
+*/
+
+@import "blocks/section/b-section";   // section

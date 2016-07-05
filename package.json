@@ -11,6 +11,7 @@
     "grunt-sass": "latest",
     "grunt-spritesmith": "^6.3.1",
     "jit-grunt": "^0.10.0",
-    "load-grunt-config": "^0.19.2"
+    "load-grunt-config": "^0.19.2",
+    "susy": "^2.2.12"
   }
 }
