@@ -20,3 +20,10 @@ grunt
 ```
 
 Верстка будет доступна по адресу 127.0.0.1:7700/templates/
+
+## version history ##
+### 3.0.1 ###
+- Susy grid support added;
+http://susy.oddbird.net/
+
+- blocks collector wind-framework added;
