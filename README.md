@@ -12,7 +12,7 @@ mklink /d dist public\dist
 ```
 ### Unix ###
 ```
-ln -s staticfiles/build static
+ln -s public/dist dist
 ```
 
 ```
