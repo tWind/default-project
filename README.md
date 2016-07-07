@@ -22,12 +22,15 @@ grunt
 Верстка будет доступна по адресу 127.0.0.1:7700/templates/
 
 ## version history ##
+
 ### 3.0.1 ###
 - Susy grid support added;
 http://susy.oddbird.net/
-
 - blocks collector wind-framework added;
 
+### 3.0.2 ###
+- browserify task added; (https://github.com/jmreidy/grunt-browserify)
+- concat task now concatenates only js libraries;
 
 @todo
 - add babel with ES 2015 preset;

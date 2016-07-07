@@ -5,6 +5,7 @@ default:
     - copy
     - sass
     - autoprefixer
+    - browserify
     - concat
     - connect
     - watch
