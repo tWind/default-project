@@ -27,3 +27,7 @@ grunt
 http://susy.oddbird.net/
 
 - blocks collector wind-framework added;
+
+
+@todo
+- add babel with ES 2015 preset;
