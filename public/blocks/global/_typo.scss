@@ -4,7 +4,6 @@
 ** @import
 ** basic styles
 */
-
 // FONT FACE : begin
 // @font-face {
 // 	font-family:'';
@@ -22,7 +21,7 @@
 // FONT FACE : end
 
 // IMPORT : begin
-//@import url('https://fonts.googleapis.com/css?family=Roboto');
+//@import url('');
 // IMPORT : end
 
 html {
@@ -123,6 +122,8 @@ ul {
     padding: 0;
 
     li {
+        margin: 0;
+        padding: 0;
     }
 }
 
@@ -134,6 +135,8 @@ ol {
     padding: 0;
 
     li {
+        margin: 0;
+        padding: 0;
     }
 }
 
