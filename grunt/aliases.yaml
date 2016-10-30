@@ -1,14 +1,15 @@
 default:
   description: 'Default (production) build'
   tasks:
-    - sprite
-    - copy
-    - sass
-    - autoprefixer
-    - browserify
-    - concat
-    - connect
-    - watch
+  - sprite
+  - copy
+  - sass
+  - autoprefixer
+  - browserify
+  - concat
+  - imagemin
+  - connect
+  - watch
 
 dev:
   description: 'dev'
