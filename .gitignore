@@ -22,3 +22,4 @@ src
 /dist
 /node_modules
 /public/dist
+/public/blocks/presentation-default-project
