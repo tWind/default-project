@@ -11,7 +11,7 @@ module.exports = {
     scripts: {
         files: [
             '<%= project.libs %>/js/*.js',
-            '<%= project.blocks %>/**/js/*.js'       
+            '<%= project.blocks %>/**/js/*.js'
         ],
         tasks: ['concat'],
         options: {

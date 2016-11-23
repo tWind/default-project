@@ -1,19 +1,208 @@
 .b-form {
-  width: 400px;
-  padding: 2rem 1rem;
-  label {
-    display: block;
-    padding-bottom: 0.125rem;
-  }
-  &__select {
-    select {
-      height: 1.750rem;
-      line-height: 1.750rem;
-      border-radius:0.375rem;
-      outline: 0;
+    input[type="hidden"] {
+        width: 0 !important;
+        height: 0 !important;
+        border: none !important;
+        outline: none !important;
     }
-  }
-  .b-section__row {
-    margin-bottom: 1rem;
-  }
+
+    // default input
+    @mixin defaultInput($placeholderColor: #8c8c8c) {
+        width: 100%;
+        box-sizing: border-box;
+        outline: none;
+        border: 1px #cecece solid;
+        padding: 8px 10px 7px;
+        border-radius: 1px;
+        display: block;
+        font-size: 14px;
+        line-height: normal;
+        transition: all 0.24s ease-out;
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 0 5px 1px rgba(#000, 0.2);
+            transition: all 0.24s ease;
+        }
+
+        &::-webkit-input-placeholder {
+            color: $placeholderColor;
+        }
+        &::-moz-placeholder {
+            color: $placeholderColor;
+        }
+        // Firefox 19+
+        &:-moz-placeholder {
+            color: $placeholderColor;
+        }
+        // Firefox 18-
+        &:-ms-input-placeholder {
+            color: $placeholderColor;
+        }
+
+        &:focus::-webkit-input-placeholder {
+            color: transparent
+        }
+        &:focus::-moz-placeholder {
+            color: transparent
+        }
+        &:focus:-moz-placeholder {
+            color: transparent
+        }
+        &:focus:-ms-input-placeholder {
+            color: transparent
+        }
+    }
+
+    // default textarea
+    @mixin defaultTextarea($placeholderColor: #8c8c8c) {
+        width: 100%;
+        box-sizing: border-box;
+        outline: none;
+        border: 1px #cecece solid;
+        padding: 6px 10px;
+        border-radius: 1px;
+        display: block;
+        font-size: 14px;
+        line-height: normal;
+        transition: all 0.24s ease-out;
+        resize: vertical;
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 0 5px 1px rgba(#000, 0.2);
+            transition: box-shadow 0.24s ease;
+        }
+
+        &::-webkit-input-placeholder {
+            color: $placeholderColor;
+            padding: 1px 0 0 0;
+        }
+        &::-moz-placeholder {
+            color: $placeholderColor;
+            padding: 1px 0 0 0;
+        }
+        // Firefox 19+
+        &:-moz-placeholder {
+            color: $placeholderColor;
+            padding: 1px 0 0 0;
+        }
+        // Firefox 18-
+        &:-ms-input-placeholder {
+            color: $placeholderColor;
+            padding: 1px 0 0 0;
+        }
+
+        &:focus::-webkit-input-placeholder {
+            color: transparent
+        }
+        &:focus::-moz-placeholder {
+            color: transparent
+        }
+        &:focus:-moz-placeholder {
+            color: transparent
+        }
+        &:focus:-ms-input-placeholder {
+            color: transparent
+        }
+
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+
+    // all text inputs
+    input[type="email"],
+    input[type="number"],
+    input[type="search"],
+    input[type="text"],
+    input[type="tel"],
+    input[type="url"],
+    input[type="password"] {
+        @include defaultInput;
+    }
+
+    // textarea
+    textarea {
+        @include defaultTextarea;
+    }
+
+    label,
+    legend {
+        display: block;
+    }
+
+    fieldset {
+        padding: 0;
+        border-width: 0;
+    }
+
+    // checkbox : begin
+    &__checkbox {
+    }
+    // checkbox : end
+
+    // radio : begin
+    &__radio {
+    }
+    // radio : end
+
+    // file : begin
+    &__file {
+    }
+    // file : end
+
+    // groups : begin
+    &__group {
+        // default row : begin
+        .row {
+            // text
+            p {
+                &.-status-important {
+                }
+
+                &.-status-success {
+                }
+
+                &.-status-fail {
+                }
+            }
+
+            // label
+            label {
+            }
+
+            // button
+            .b-button {
+            }
+
+            // two cols
+            &.-two-cols {
+                @include justify-blocks;
+
+                // default col : begin
+                .col {
+                    width: 49%;
+                    display: inline-block;
+                    vertical-align: top;
+                }
+                // default col : end
+            }
+
+            // three cols
+            &.-three-cols {
+                @include justify-blocks;
+
+                // default col : begin
+                .col {
+                    width: 32.1%;
+                    display: inline-block;
+                    vertical-align: top;
+                }
+                // default col : end
+            }
+        }
+        // default row : end
+    }
+    // groups : end
 }

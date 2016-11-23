@@ -1,29 +1,45 @@
+// IMPORT SASS
+
 /*
-**  SUSY
+** SUSY FRAMEWORK (http://susydocs.oddbird.net/en/latest/)
+** BREAKPOINT (http://breakpoint-sass.com)
 */
+
 @import "../node_modules/susy/sass/susy";
+//@import "../node_modules/breakpoint-sass/stylesheets/breakpoint";
 
 /*
-**  GLOBAL
+** GLOBAL
 */
 
+@import "blocks/global/normalize";
+@import "blocks/global/global";
 @import "blocks/global/variables";
-@import "blocks/global/utils";
-@import 'blocks/global/normalize';
-@import "blocks/global/grid";
-@import "blocks/global/fonts";
-@import 'blocks/global/typo';
-@import 'blocks/global/global';
-
-/*
-** MIXINS
-*/
-
-@import "blocks/mixins/mixins";
+@import "blocks/global/mixins";
+//@import "blocks/global/sprites/icon-sprite";
+@import "blocks/global/typo";
+//@import "blocks/global/grid";
+//@import "blocks/global/utils";
+@import "blocks/global/helpers";
 
 /*
 ** BLOCKS
 */
 
-@import "blocks/section/b-section";   // section
-@import "blocks/form/b-form";         // form
+@import "blocks/button/b-button";
+@import "blocks/dev/header/b-header";
+//@import "blocks/dev/content/b-content";
+@import "blocks/dev/footer/b-footer";
+//@import "blocks/dev/section/b-section";
+@import "blocks/form/b-form";
+//@import "blocks/navigation/b-nav";
+//@import "blocks/sidebar/b-sidebar";
+
+/*
+** LIBS
+** daneden-animate (https://daneden.github.io/animate.css)
+** justinaguilar-animations (http://www.justinaguilar.com/animations/)
+*/
+
+//@import "libs/sass/animate/daneden-animate";
+//@import "libs/sass/animate/justinaguilar-animations";
