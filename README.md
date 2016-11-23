@@ -46,10 +46,14 @@ grunt
 * grunt-contrib-imagemin
 * susy
 * breakpoint-sass
+* htmlrender
+* grunt-htmlrender
+* timegrunt
 
 ## Grunt tasks ##
 
 * sprite
+* htmlrender
 * copy
 * sass
 * autoprefixer

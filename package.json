@@ -11,10 +11,12 @@
         "grunt-contrib-watch": "latest",
         "grunt-sass": "latest",
         "grunt-spritesmith": "latest",
+        "grunt-htmlrender": "latest",
         "jit-grunt": "latest",
         "load-grunt-config": "latest",
         "grunt-contrib-imagemin": "latest",
         "susy": "^2.2.12",
-        "breakpoint-sass": "latest"
+        "breakpoint-sass": "latest",
+        "time-grunt": "latest"
     }
 }

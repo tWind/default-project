@@ -19,7 +19,9 @@ psimg
 src
 *.map
 .gitignore
+.flooignore
 /dist
 /node_modules
 /public/dist
 /public/blocks/presentation-default-project
+/templates/main.html
