@@ -2,6 +2,7 @@ default:
   description: 'Default (production) build'
   tasks:
   - sprite
+  - htmlrender
   - copy
   - sass
   - autoprefixer

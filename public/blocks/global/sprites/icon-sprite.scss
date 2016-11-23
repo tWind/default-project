@@ -53,28 +53,28 @@ $spritesheet: (136px, 136px, '../img/icon-sprite.png', $spritesheet-sprites, );
 /*
 The provided mixins are intended to be used with the array-like variables
 
-.icon-home {
-  @include sprite-width($icon-home);
+.icons-home {
+  @include sprite-width($icons-home);
 }
 
-.icon-email {
-  @include sprite($icon-email);
+.icons-email {
+  @include sprite($icons-email);
 }
 
 Example usage in HTML:
 
 `display: block` sprite:
-<div class="icon-home"></div>
+<div class="icons-home"></div>
 
 To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
 
 // CSS
-.icon {
+.icons {
   display: inline-block;
 }
 
 // HTML
-<i class="icon icon-home"></i>
+<i class="icons icons-home"></i>
 */
 @mixin sprite-width($sprite) {
   width: nth($sprite, 5);

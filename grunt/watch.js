@@ -1,7 +1,9 @@
 module.exports = {
     css: {
         files: [
-            '<%= project.app %>/blocks/**/{,*/}*.{scss,sass}'
+            '<%= project.app %>/blocks/**/{,*/}*.{scss,sass}',
+            '<%= project.app %>/libs/sass/{,*/}*.{scss,sass}',
+            '<%= project.app %>/<%= project.name %>*.{scss,sass}'
         ],
         tasks: ['sass', 'autoprefixer'],
         options: {
@@ -16,6 +18,17 @@ module.exports = {
         tasks: ['concat'],
         options: {
             spawn: false
+        }
+    },
+    html: {
+        files: [
+            '<%= project.blocks %>/**/*.html',
+            'templates/sources/*.html',
+            '<%= project.blocks %>/**/**/*.html'
+        ],
+        tasks: ['htmlrender'],
+        options: {
+            spawn: true
         }
     },
     other: {
