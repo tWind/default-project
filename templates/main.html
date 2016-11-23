@@ -25,8 +25,64 @@
 
 <body>
 <!-- HEADER PAGE : begin -->
-<header class="b-header">Start here!</header>
+<header class="b-header">
+    <div class="container">
+        <h1>Default Project</h1>
+        <p>Начиная новый проект</p>
+    </div>
+</header>
 <!-- HEADER PAGE : end -->
+
+<!-- CONTENT PAGE : begin -->
+<article class="b-section">
+    <div class="container">
+        <h2>Описание &laquo;Default Project&raquo;</h2>
+        <p>Данный инструмент является стартовым шаблоном для простых проектов. Он отлично подходить для верстки любых сайтов, которые не являются полноценными веб-приложениями.</p>
+        <h3>Файловая структура:</h3>
+        <ul>
+            <li>
+                <span>grunt/ <i>Каталог с тасками для Grunt</i></span>
+                <ul>
+                    <li>aliases.yaml <i>Файл ассоциаций, в котором зарегистрированы все алиасы задач. Это то, что мы должны сделать перед тем, как вызывать registerTask функцию.</i></li>
+                    <li>autoprefixer.js <i>Таск добавляет только префиксы для требующих поддержки браузеров.</i></li>
+                    <li>browserify.js <i>Позволяет использовать require в браузере также, как это делается в Node. Все указанные зависимости собираются в один файл.</i></li>
+                    <li>concat.js <i>Таск для простого объединения файлов. Все указанные зависимости собираются в один файл.</i></li>
+                    <li>connect.js <i>Простой веб-сервер для статических сайтов</i></li>
+                    <li>copy.js <i>Копирует указанные директории или файлы. Необходим для создания каталога /public/dist/ , в котором храняться обработанные версии файлов для продакшена.</i></li>
+                    <li>imagemin.js <i>Оптимизирует изображения в каталоге /public/dist/ .</i></li>
+                    <li>sass.js <i>Сборка одного CSS файла из всех импортированных SASS/SCSS файлов.</i></li>
+                    <li>sprite.js <i>Сборка спрайтов</i></li>
+                    <li>watch.js <i>Отслеживание изменений. При необходимости запускает те или иные таски.</i></li>
+                </ul>
+            </li>
+            <li><span>node_modules/ <i>Директория модулей Node</i></span></li>
+            <li>
+                <span>public/ <i>В каталоге храняться исходники и скомпилированные версии стилей, скриптов и изображений</i></span>
+                <ul>
+                    <li>blocks/ <i>Это логически независимые единицы макета страницы. Блок содержит .scss и .js файлы, описывающие его стили и функциональные возможности. Файлы стилей начинаются с префикса "b-", далее следует название блока, например "b-button".</i></li>
+                    <li>dist/ <i>Хранит в себе обработанные версии файлов для продакшена.</i></li>
+                    <li>fonts/ <i>Шрифты подключенные через @font-face.</i></li>
+                    <li>img/ <i>Изображения. В том числе иконки и спрайты.</i></li>
+                    <li>libs/ <i>Сторонние JS/SCSS библиотеки и небольшой JS-фреймворк для облегчения рутинных операций.</i></li>
+                    <li>default-project.bundle.js <i>Запуск небольшого фреймворка Wind</i></li>
+                    <li>default-project.scss <i>Импорты SASS/SCSS из blocks/ и libs/</i></li>
+                </ul>
+            </li>
+            <li>
+                <span>templates/ <i>Статичные шаблоны в HTML</i></span>
+            </li>
+        </ul>
+    </div>
+</article>
+<!-- CONTENT PAGE : end -->
+
+<!-- FOOTER PAGE : begin -->
+<footer class="b-footer">
+    <div class="container">
+        <p>twind&ddale dev<br>2016</p>
+    </div>
+</footer>
+<!-- FOOTER PAGE : end -->
 
 <!-- JS -->
 <script src="/dist/js/default-project-base.js"></script>
