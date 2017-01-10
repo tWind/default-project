@@ -12,10 +12,10 @@ module.exports = {
     },
     scripts: {
         files: [
-            '<%= project.libs %>/js/*.js',
-            '<%= project.blocks %>/**/js/*.js'
+            '<%= project.libs %>/js/{,*/}*.js',
+            '<%= project.blocks %>/**/js/{,*/}*.js'
         ],
-        tasks: ['concat'],
+        tasks: ['concat', 'browserify'],
         options: {
             spawn: false
         }
