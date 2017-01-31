@@ -10,6 +10,8 @@
         "grunt-contrib-copy": "latest",
         "grunt-contrib-watch": "latest",
         "grunt-sass": "latest",
+        "grunt-contrib-cssmin": "latest",
+        "grunt-contrib-uglify": "latest",
         "grunt-spritesmith": "latest",
         "grunt-htmlrender": "latest",
         "jit-grunt": "latest",

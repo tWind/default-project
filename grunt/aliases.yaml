@@ -12,7 +12,18 @@ default:
   - connect
   - watch
 
-dev:
-  description: 'dev'
+prod:
+  description: 'production'
   tasks:
+    - sprite
+    - htmlrender
+    - copy
+    - sass
+    - autoprefixer
+    - cssmin
+    - browserify
+    - concat
+    - imagemin
+    - uglify
+    - connect
     - watch
