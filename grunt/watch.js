@@ -1,4 +1,7 @@
 module.exports = {
+    options: {
+        livereload: true
+    },
     css: {
         files: [
             '<%= project.app %>/blocks/**/{,*/}*.{scss,sass}',
@@ -32,7 +35,7 @@ module.exports = {
         }
     },
     other: {
-        files: ['<%= project.images %>/*.{png,jpg,gif,svg}'],
+        files: ['<%= project.images %>/*.{png,jpeg,jpg,gif,svg}'],
         tasks: ['copy'],
         options: {
             spawn: true
